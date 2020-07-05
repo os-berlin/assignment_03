@@ -100,6 +100,7 @@ public class UserService {
 				userMenu(switchToUser);
 			}
 		}
+		System.out.println("Invalid username. Bye bye!");
 	}
 
 	private void updateUserDetails(User currentUser, String userDetail, String value) throws IOException {
