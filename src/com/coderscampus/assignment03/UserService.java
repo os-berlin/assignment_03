@@ -92,11 +92,11 @@ public class UserService {
 	private void switchUser(User currentUser) throws IOException {
 
 		System.out.println("\n" + "Which user would you like to login as? (Type in a valid username)" + "\n");
-		String switchToUserName = scanner.nextLine();
+		String inputUsername = scanner.nextLine();
 
 		for (User switchToUser : users) {
 
-			if (switchToUserName.equalsIgnoreCase(switchToUser.getUsername())) {
+			if (inputUsername.equalsIgnoreCase(switchToUser.getUsername())) {
 				userMenu(switchToUser);
 			}
 		}
